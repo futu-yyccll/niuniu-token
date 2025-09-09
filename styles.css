@@ -1,0 +1,528 @@
+/* Common Styles for Niuniu Token Platform */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav-tab {
+    flex: 1;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-tab:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-tab.active {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h3 {
+    margin-top: 0;
+    color: #ffd700;
+}
+
+/* Token Info Cards */
+.token-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.token-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid #ffd700;
+}
+
+.token-image.large {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #ffd700;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.add-button, .cta-button {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.add-button:hover, .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.cta-button {
+    width: auto;
+    margin: 10px;
+}
+
+/* Status Messages */
+.status {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.error { 
+    background: rgba(255, 0, 0, 0.2); 
+}
+
+.success { 
+    background: rgba(0, 255, 0, 0.2); 
+}
+
+.warning { 
+    background: rgba(255, 165, 0, 0.2); 
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Features Grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h4 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Coming Soon Styles */
+.coming-soon {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.coming-soon p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.swap-icon {
+    font-size: 4em;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Progress Section */
+.progress-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    height: 100%;
+    width: 65%;
+    border-radius: 10px;
+    animation: progress 2s ease-in-out;
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    100% { width: 65%; }
+}
+
+/* Uniswap-style Swap Module */
+.swap-module {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 0;
+    margin: 30px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.swap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swap-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.settings-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.settings-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.swap-container {
+    padding: 24px;
+}
+
+.token-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.token-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.token-input:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.input-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.balance {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.balance:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.amount-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    outline: none;
+    text-align: right;
+}
+
+.amount-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.token-selector-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 120px;
+}
+
+.token-selector-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.token-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.token-symbol {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s ease;
+}
+
+.token-selector-btn:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.swap-arrow-container {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0;
+}
+
+.swap-arrow-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swap-arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: rotate(180deg);
+}
+
+.swap-arrow {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.swap-details {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.swap-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.swap-info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.info-value {
+    color: white;
+    font-weight: 500;
+}
+
+.swap-button {
+    width: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.coming-soon-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+    }
+    
+    .nav-tab {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section h2 {
+        font-size: 2em;
+    }
+    
+    .coming-soon h2 {
+        font-size: 2em;
+    }
+    
+    .swap-container {
+        padding: 16px;
+    }
+    
+    .amount-input {
+        font-size: 24px;
+    }
+    
+    .token-selector-btn {
+        min-width: 100px;
+        padding: 6px 10px;
+    }
+    
+    .token-symbol {
+        font-size: 14px;
+    }
+} 
