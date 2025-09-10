@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Niuniu Token to MetaMask</title>
+    <title>Add NIUNIU Token to MetaMask</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/futu-yyccll/Icons/refs/heads/main/niuniu-icon.png">
     <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"></script>
     <link rel="stylesheet" href="styles.css">
@@ -21,16 +21,16 @@
         <div class="token-info">
             <h3>Token Information</h3>
             <img src="https://raw.githubusercontent.com/futu-yyccll/Icons/refs/heads/main/niuniu-icon.png" 
-                 alt="Niuniu Token" class="token-image">
+                 alt="NIUNIU Token" class="token-image">
             <p><strong>Name:</strong> niuniu</p>
             <p><strong>Symbol:</strong> NIUNIU</p>
             <p><strong>Decimals:</strong> 18</p>
             <p><strong>Network:</strong> Sepolia Testnet</p>
             <p><strong>Contract:</strong> 0x2bbd53ecc334bc3e5116892923f10e9b6749ad78</p>
-            <p><strong>Description:</strong> Niuniu Token - Your gate to a magical web3 journey</p>
+            <p><strong>Description:</strong> NIUNIU Token - Your gate to a magical web3 journey</p>
         </div>
 
-        <button class="add-button" onclick="addNiuniuTokenToMetaMask()">
+        <button class="add-button" onclick="addNIUNIUTokenToMetaMask()">
             🚀 Add NIUNIU Token to MetaMask
         </button>
 
@@ -43,9 +43,9 @@
             <ol>
                 <li>Make sure you have MetaMask installed and unlocked</li>
                 <li>Switch to Sepolia testnet in MetaMask</li>
-                <li>Click "Add Niuniu Token to MetaMask" button</li>
+                <li>Click "Add NIUNIU Token to MetaMask" button</li>
                 <li>Confirm the token addition in MetaMask popup</li>
-                <li>Enjoy your Niuniu token with logo! 🎉</li>
+                <li>Enjoy your NIUNIU token with logo! 🎉</li>
             </ol>
         </div>
     </div>
@@ -77,7 +77,7 @@
             return null;
         }
 
-        async function addNiuniuTokenToMetaMask() {
+        async function addNIUNIUTokenToMetaMask() {
             try {
                 const provider = getMetaMaskProvider();
                 
@@ -139,7 +139,7 @@
                 });
 
                 if (wasAdded) {
-                    updateStatus('✅ Niuniu token successfully added to MetaMask with logo!', 'success');
+                    updateStatus('✅ NIUNIU token successfully added to MetaMask with logo!', 'success');
                 } else {
                     updateStatus('❌ Token was not added to MetaMask', 'error');
                 }
