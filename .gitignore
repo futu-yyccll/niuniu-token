@@ -1,2 +1,15 @@
 .env
 lib/
+script/
+niuniu-token-assets/
+.cursor/
+.env.example
+DEPLOYMENT.md
+addresses.txt
+airdrop1.txt
+broadcast/
+cache/
+foundry.lock
+foundry.toml
+out/
+src/
