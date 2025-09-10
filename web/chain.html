@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niuniu Chain - Layer 2 Solution</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/futu-yyccll/Icons/refs/heads/main/niuniu-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar Container -->
+        <div id="navbar-container"></div>
+        
+        <!-- Disclaimer Module -->
+        <div id="disclaimer-container"></div>
+
+        <h1>🔗 Niuniu Chain - Layer 2 Solution</h1>
+        
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <img src="https://raw.githubusercontent.com/futu-yyccll/Icons/refs/heads/main/niuniu-icon.png" 
+                 alt="Niuniu Chain" class="token-image large">
+            <h2>Optimistic Layer 2 on Ethereum</h2>
+            <p>Experience blazing-fast transactions with ultra-low fees on Niuniu Chain, a secure and scalable Layer 2 solution built on Ethereum.</p>
+        </div>
+        
+        <!-- Chain Features -->
+        <div class="features">
+            <div class="feature-card">
+                <h4>⚡ Lightning Fast</h4>
+                <p>2-second block times with instant finality for better user experience</p>
+            </div>
+            <div class="feature-card">
+                <h4> Ultra Low Fees</h4>
+                <p>99% cheaper than Ethereum mainnet with gas fees under $0.01</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔒 Ethereum Security</h4>
+                <p>Inherits Ethereum's security through optimistic rollup technology</p>
+            </div>
+            <div class="feature-card">
+                <h4>️ EVM Compatible</h4>
+                <p>Deploy any Ethereum smart contract without modifications</p>
+            </div>
+        </div>
+        
+        <!-- Add Network Section -->
+        <div class="token-info">
+            <h3>Add Niuniu Chain to MetaMask</h3>
+            <p>Connect to Niuniu Chain and start building with ultra-low fees and fast transactions.</p>
+            
+            <button class="add-button coming-soon-btn" onclick="showComingSoon()">
+                <span class="btn-text"> Coming Soon!</span>
+            </button>
+            
+            <div class="status" id="chain-status">
+                Niuniu Chain integration is coming soon! Stay tuned for the launch.
+            </div>
+        </div>
+        
+        <!-- Technical Specifications -->
+        <div class="token-info">
+            <h3>Technical Specifications</h3>
+            <div class="tech-specs">
+                <div class="spec-item">
+                    <span class="spec-label">Block Time:</span>
+                    <span class="spec-value">2 seconds</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Transaction Throughput:</span>
+                    <span class="spec-value">2,000+ TPS</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Gas Limit per Block:</span>
+                    <span class="spec-value">30,000,000</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Finality Time:</span>
+                    <span class="spec-value">~7 days (Ethereum security)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Bridge Contract:</span>
+                    <span class="spec-value">0x1234...5678</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h3>Ready to Build on Niuniu Chain?</h3>
+            <a href="add-token.html" class="cta-button">Add Token to MetaMask</a>
+            <a href="swap.html" class="cta-button">Try Niuniu Swap</a>
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="disclaimer.js"></script>
+    <script>
+        function showComingSoon() {
+            alert('🚀 Niuniu Chain integration is coming soon! Stay tuned for the launch in Q2 2025.');
+        }
+
+        // Auto-detect wallet on load
+        window.addEventListener('load', () => {
+            const status = document.getElementById('chain-status');
+            status.textContent = 'Niuniu Chain integration is coming soon! Stay tuned for the launch.';
+            status.className = 'status success';
+        });
+    </script>
+</body>
+</html> 
